@@ -1,0 +1,256 @@
+
+*{
+     box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+}
+
+.navbar > li > a {
+    text-decoration: none;
+    color: gray;
+}
+
+.navbar > li > a:hover {
+    color: #f2a01d;
+}
+
+.logo{
+    height: 50px;
+    padding-right: 20px;
+}
+.form {
+ width: 350px;
+ display: inline-flex;
+}
+.titulo{
+    margin-top: 200px;
+    padding-left: 30px;
+   color:gray;
+   padding-right: 30px;
+}
+.contenido{
+   padding-top: 200px;
+   padding-left: 30px;
+   color:gray;
+}
+#producto{
+    float:right;
+    height: 200px;
+    width: 300px;
+    margin-top: 130px;
+
+}
+#principal{
+   /* display: flex;*/
+   margin-top:0px;
+   padding: 0px;
+   float: right;
+   margin-top: 70px;
+   margin-bottom: 20px;
+}
+.info{
+    color:  #211567 ;
+    padding-left: 60px;
+}
+.a {
+    background-color:gray;
+    text-decoration: underline;
+}
+@media (max-width:1024px){
+    #principal{
+      width: 70%;
+    }
+}
+@media (max-width:360px){
+    .header{
+      align-content: center;
+      align-content: center;
+    }
+}
+#Inicio{
+    height: 120vh;
+    width:100%;
+    background-color: #f2a01d;
+}
+#Nuestrosservicios{
+    height: 300vh;
+    width:100%;
+    background-color:#572364;;
+}
+#Nuestracompañia{
+    height: 200vh;
+    width:100%;
+    background-color:gray;
+}
+.pc1{
+    height: 200px;
+    width: 230px;
+   padding-left: 20px;
+    padding-top: 40px;
+    display: grid;
+}
+.pc{
+    height: 200px;
+    width: 350px;
+   padding-left: 20px;
+    padding-top: 20px;
+    display: grid;
+}
+
+@media only screen and (min-width: 360px ) {
+    .contenido {
+      width: 80%;
+      align-content: center;
+      }
+  }
+  .pc2{
+      padding-top: 30px;
+      display: grid;
+  }
+  .accesorios{
+      width: auto;
+      height: auto;
+    padding-bottom: 80px;
+    display: grid;
+  }
+  /*para las categorias*/
+.wrap{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+.wrap>h1{
+ font-weight: 400;
+ display: flex;
+ flex-direction: column;
+ text-align:center;
+ margin: 15px 0px;
+ color:white;
+ padding-top: 60px;
+}
+.wrap>h1:after{
+   content: '';
+   width: 100%;
+   height: 1px;
+   background-color:rgb(107, 101, 101);
+   margin: 20px 0;
+    
+   }
+  .products_filter{
+      display: flex;
+  }
+  .category_lista{
+      display: flex;
+      flex-direction: column;
+      width: 18%;
+      margin-left: 4em;
+  
+  }
+.category_item {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    background-color: gray;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.category_item:hover {
+    background: #f2a01d;
+    color: white;
+}
+.category_lista .ct_item-active{
+    background-color:gray;
+}
+/*Se le pone estilos a los enlaces de los productos*/
+.productos-Item >a:hover {
+    color:rgb(78, 78, 78);
+ text-decoration:none;
+   
+}
+.celulares{
+    height: auto;
+    padding-left: 0;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    /*display: grid;
+   grid-template-rows: 190px 190px;*/
+   display: flex;
+align-items: center;
+justify-content: center;
+}
+ #celular2{
+    height: 200px;
+     padding-left:0;
+  padding-top: 40px;
+flex-wrap: wrap;
+    /*display: grid;
+   grid-template-rows: 190px 190px;*/
+   display: flex;
+align-items: center;
+justify-content: center;
+ }
+ #accesorio2{
+     padding-top: 20px;
+     padding-bottom: 99px;
+     width: 150px;
+     height: 180px;
+ }
+/*para  los productos*/
+.lista-productos{
+    width: 100%;
+    display: flex;
+   /* flex-wrap: wrap;*/
+justify-content: center;
+align-items: center;
+padding-bottom: 90px;
+/*display: grid ;
+grid-template-rows: 190px 190px;*/
+
+
+}
+  
+.lista-productos .productos-Item{
+    width: 100%;
+ background-color: #f2a01d;
+ margin-left: 2%;
+ bottom: 70px;
+ /*display: grid;*/
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-wrap: wrap;
+ box-shadow: 0px 0px 6px 0px rgb(107, 101, 101);
+ flex-direction: column;
+ align-self: center;
+ 
+}
+.lista-productos .productos-Item img{
+    width:auto;
+    height:200px;
+ padding-bottom: 50px;
+    display: grid ;
+   /* grid-template-rows: 190px 190px;
+    align-items: center;
+    justify-content: center;*/
+   /* flex-wrap:wrap;*/
+flex-direction: row;
+}
+.lista-productos .productos-Item a{ /*para los titulos*/
+    display: block;
+   /*flex-wrap: wrap;*/
+    width: 100%;
+    padding: 8px 0;
+    background-color: gray;
+    color:#fff;
+    text-align: center;
+    text-decoration: none;
+}
