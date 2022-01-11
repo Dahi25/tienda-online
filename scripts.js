@@ -1,17 +1,65 @@
-$(document).ready(function(){
-   /* alert("Hola")*/
-   $('.category_lista .category_item[category="todo"]').addClass('ct_item-active')
-    });
+//para el buscador funcional
+function BuscarTexto(){
 
-    //agregando el evento click al  enlace//
-    $('.category_item').click(function(){
-        var cateProduct = $(this).attr('category');//para cuando se le de click me filtre por categoria//
-        console.log(cateProduct);
-    $('.category_item').removeClass('ct_item-active');
-    $(this).addClass('ct_item-active');
-    });
-//para ocultar los productos
-$('.productos_Item').hide();
+ var Valortexto=document.getElementById('search').value;
+ debugger;
+ var compu = document.getElementById('divcomputadores');
+ var moni = document.getElementById('divmonitores');
+ var servi = document.getElementById('divservidores');
+ var celu  = document.getElementById('divcelulares');
+ var acces = document.getElementById('divaccesorios');
+ if(Valortexto==="computadores"){
+ //  document.getElementById('computadores').style.display='block';
+    compu.style.display = 'block';
+    moni.style.display = 'none';
+    servi.style.display = 'none';
+    celu.style.display = 'none';
+    acces.style.display = 'none';
+    
+ } else if(Valortexto==="monitores"){
+    compu.style.display = 'none';
+    moni.style.display = 'block';
+    servi.style.display = 'none';
+    celu.style.display = 'none';
+    acces.style.display = 'none';
+ }else if(Valortexto==="servidores"){
+    compu.style.display = 'none';
+    moni.style.display = 'none';
+    servi.style.display = 'block';
+    celu.style.display = 'none';
+    acces.style.display = 'none';
 
-//para ocultar solo la categoria seleccionada
-$('.productos_Item .category_item[category="computadores"]').show();
+}else if(Valortexto==="celulares"){
+    compu.style.display = 'none';
+    moni.style.display = 'none';
+    servi.style.display = 'none';
+    celu.style.display = 'block';
+    acces.style.display = 'none';
+
+ }
+else if(Valortexto==="accesorios"){
+    compu.style.display = 'none';
+    moni.style.display = 'none';
+    servi.style.display = 'none';
+    celu.style.display = 'none';
+    acces.style.display = 'block';
+
+ }
+else{
+    compu.style.display = 'none';
+    moni.style.display = 'none';
+    servi.style.display = 'none';
+    celu.style.display = 'none';
+    acces.style.display = 'none';
+
+    swal({
+        type: 'error',
+        title: "Estimado Usuario",
+        text: 'No se encontro resultados para su busqueda',
+        position:'top',
+        icon:'warning',
+        timer:5000,
+        background:'#000'
+     });
+ }
+}
