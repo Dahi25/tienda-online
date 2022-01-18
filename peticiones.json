@@ -1,0 +1,10 @@
+[
+    {
+       "resourceType" : " total " ,
+        "presupuesto" : 600
+    },
+    {
+       "resourceType" : " script " ,
+        "presupuesto" : 300
+    }
+ ]
