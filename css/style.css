@@ -243,10 +243,8 @@ grid-template-rows: 190px 190px;*/
     justify-content: center;*/
    /* flex-wrap:wrap;*/
 flex-direction: row;
-}
-.lista-productos .productos-Item a{ /*para los titulos*/
+}.lista-productos .productos-Item a{ /*para los titulos*/
     display: block;
-   /*flex-wrap: wrap;*/
     width: 100%;
     padding: 8px 0;
     background-color: gray;
@@ -254,3 +252,16 @@ flex-direction: row;
     text-align: center;
     text-decoration: none;
 }
+/*para alejar el div de los filtros*/
+.productsfilter{
+    display: flex;
+    left: 100%;
+
+}
+.form-control{
+    position: absolute;
+       align-items: center;
+       justify-content: center;
+       width: 5px;
+  }
+
